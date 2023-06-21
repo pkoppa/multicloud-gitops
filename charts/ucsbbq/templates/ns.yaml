@@ -1,0 +1,8 @@
+---
+apiVersion: v1
+kind: Namespace                 
+metadata:
+  name: ucsbbq
+  labels:
+    pds.portworx.com/available: "true"
+

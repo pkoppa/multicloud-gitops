@@ -8,6 +8,7 @@ clusterGroup:
     - golang-external-secrets
     - config-demo
     - hello-world
+    - ucsbbq
 
   subscriptions:
     acm:
@@ -22,6 +23,12 @@ clusterGroup:
     - hello-world
 
   applications:
+    ucsbbq:
+      name: ucsbbq
+      namespace: ucsbbq
+      project: hub
+      path: charts/ucsbbq
+
     acm:
       name: acm
       namespace: open-cluster-management
