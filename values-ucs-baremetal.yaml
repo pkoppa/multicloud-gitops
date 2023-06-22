@@ -10,6 +10,7 @@ clusterGroup:
 
   namespaces:
     - hello-world
+    - ucsbbq
 
   subscriptions:
 
@@ -17,6 +18,11 @@ clusterGroup:
     - hello-world
 
   applications:
+    ucsbbq:
+      name: ucsbbq
+      namespace: ucsbbq
+      project: hub
+      path: charts/ucsbbq
 
     hello-world:
       name: hello-world
