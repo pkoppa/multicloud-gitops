@@ -80,6 +80,14 @@ clusterGroup:
       # verbosity: "-v"
 
   managedClusterGroups:
+    baremetalClusters:
+      name: ucs-baremetal
+      acmlabels:
+      - name: clusterGroup
+        value: ucs-baremetal
+      helmOverrides:
+      - name: clusterGroup.isHubCluster
+        value: false    
     rosaClusters:
       name: rosa-cluster
       acmlabels:
