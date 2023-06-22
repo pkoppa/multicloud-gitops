@@ -16,12 +16,13 @@ clusterGroup:
 
   projects:
     - hello-world
+    - ucsbbq
 
   applications:
     ucsbbq:
       name: ucsbbq
       namespace: ucsbbq
-      project: hub
+      project: ucsbbq
       path: charts/ucsbbq
 
     hello-world:
