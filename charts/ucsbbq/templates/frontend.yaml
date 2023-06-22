@@ -18,7 +18,7 @@ spec:
           - name: docker    
       containers:
       - name: ucsbbq-web
-        image: pkoppa/ucsbbq
+        image: pkoppa/ucsbbq:1.0
         env:
         - name: MONGO_INIT_USER
           value: "porxie" #Mongo User with permissions to create additional databases and users. Typically "porxie" or "pds"
