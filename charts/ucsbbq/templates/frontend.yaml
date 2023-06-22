@@ -17,7 +17,7 @@ spec:
       imagePullSecrets:
           - name: docker    
       containers:
-              - name: ucsbbq-web:1.0
+              - name: ucsbbq-web
         image: pkoppa/ucsbbq
         env:
         - name: MONGO_INIT_USER
